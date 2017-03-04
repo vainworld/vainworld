@@ -1,8 +1,45 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>Vainworld</title>
-</head>
-<body>
-<h1>Coming soon</h1>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>VainWorld</title>
+
+    <script src="https://www.gstatic.com/firebasejs/3.7.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyCwrAtQPg_kySXPU8nnOkzcbuEeTu8OWeU",
+        authDomain: "vaincoach-d69ba.firebaseapp.com",
+        databaseURL: "https://vaincoach-d69ba.firebaseio.com",
+        storageBucket: "vaincoach-d69ba.appspot.com",
+        messagingSenderId: "539753117349"
+      };
+      //firebase.initializeApp(config);
+    </script>
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+      (function(l) {
+        if (l.search) {
+          var q = {};
+          l.search.slice(1).split('&').forEach(function(v) {
+            var a = v.split('=');
+            q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&');
+          });
+          if (q.p !== undefined) {
+            window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + (q.p || '') +
+              (q.q ? ('?' + q.q) : '') +
+              l.hash
+            );
+          }
+        }
+      }(window.location))
+    </script>
+
+  </head>
+  <body>
+    <div id="root"><h1>VainCoach</h1></div>
+  </body>
 </html>
